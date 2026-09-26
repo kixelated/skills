@@ -13,5 +13,6 @@ If unsure about any course of action, pause and interactively prompt the user fo
 
 If everything looks good, leave a summary of the changes made, then enable auto-merge with the full 40-character head SHA.
 Enable it only once every open decision is resolved: prompt the user for each with your recommendation, or, as a background agent, list them in your report.
+Record the outcome as a PR comment when it isn't already in the PR: each decision and its reason, and any follow-up the user declined.
 When done, explain the result in a few lines and offer any follow-ups as a multi-select.
 Never close a PR to unstick it, and never work around a refused merge; ask instead.
