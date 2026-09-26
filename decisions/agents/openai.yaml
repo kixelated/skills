@@ -1,4 +1,0 @@
-interface:
-  display_name: "Decisions"
-  short_description: "Hand a finished task to the user with its decisions and follow-ups"
-  default_prompt: "Use $decisions to report this result and prompt for its open decisions."
