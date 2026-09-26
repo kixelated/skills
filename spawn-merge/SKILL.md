@@ -3,7 +3,7 @@ name: spawn-merge
 description: Decide and merge GitHub PRs in parallel.
 ---
 
-Read the /merge, /takeover, and /close skills before starting.
+Read the /merge, /takeover, /close, and /decisions skills before starting.
 The skill argument can be used to filter the PRs in scope.
 
 The goal is to evaluate the open PRs in the repository and decide which ones to merge.
@@ -20,5 +20,5 @@ Each sub-agent blocks on its own waits and reports back only when done or blocke
 Keep going until all PRs have been decided then wait for all spawned sub-agents to finish.
 Before finishing, refresh the open PR list and process any new PRs in scope.
 
-Summarize the results when done.
-Include all of the issues encountered and suggested follow-ups.
+As each sub-agent reports, follow /decisions without waiting for the rest.
+Summarize the results when done, including the issues encountered.
