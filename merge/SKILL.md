@@ -13,9 +13,3 @@ If unsure about any course of action, pause and interactively prompt the user fo
 
 If everything looks good, leave a summary of the changes made, then enable auto-merge with the full 40-character head SHA.
 Never close a PR to unstick it, and never work around a refused merge; ask instead.
-
-After GitHub confirms the PR is merged or closed, run `just clean` in its local
-checkout if that recipe exists, once this task's checks and builds have stopped.
-Enabling auto-merge is not completion. Preserve another task's active processes;
-report a refused or failed cleanup without changing the PR outcome. Leave the
-checkout itself for the host's worktree cleanup timer to retire after you exit.
