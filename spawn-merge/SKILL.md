@@ -21,4 +21,5 @@ Keep going until all PRs have been decided then wait for all spawned sub-agents 
 Before finishing, refresh the open PR list and process any new PRs in scope.
 
 As each sub-agent reports, explain its result in a few lines and prompt the user inline without waiting for the rest: each open decision with the PR and your recommendation, then its follow-ups as a multi-select.
+Record the outcome as a PR comment when it isn't already in the PR: each decision and its reason, and any follow-up the user declined.
 Summarize the results when done, including the issues encountered.
